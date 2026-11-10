@@ -19,18 +19,22 @@ public class Main {
         biblioteca.listarAcervo();
 
         System.out.println("\n=== EMPRESTIMOS ===");
+
+
         // Aluno ate o limite de 3 (bem-sucedidos)
         biblioteca.emprestar(aluno, l1);
         biblioteca.emprestar(aluno, l2);
         biblioteca.emprestar(aluno, r1);
+
         // Quarto item: recusado por limite atingido
         biblioteca.emprestar(aluno, r2);
+
         // Professor tem limite maior: consegue o mesmo item recusado ao aluno
         biblioteca.emprestar(professor, r2);
 
         System.out.println("\n=== DEVOLUCOES ===");
-        biblioteca.devolver(aluno, l1, 20); // livro: 6 dias de atraso -> R$ 3,00
-        biblioteca.devolver(aluno, r1, 5);  // revista no prazo -> sem multa
+        biblioteca.devolver(aluno, l1, 20); // livro: 6 dias de atraso dá R$ 3,00
+        biblioteca.devolver(aluno, r1, 5);
 
         System.out.println();
         biblioteca.listarAcervo();
