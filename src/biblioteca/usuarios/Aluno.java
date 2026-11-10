@@ -1,3 +1,7 @@
+package biblioteca.usuarios;
+
+import biblioteca.dominio.Usuario;
+
 public class Aluno extends Usuario {
 
     public Aluno(String nome) {

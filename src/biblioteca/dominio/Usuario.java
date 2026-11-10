@@ -1,3 +1,5 @@
+package biblioteca.dominio;
+
 public abstract class Usuario {
     private final String nome;
     private int quantidadeEmprestada = 0;
@@ -21,7 +23,7 @@ public abstract class Usuario {
         return quantidadeEmprestada >= limiteItens();
     }
 
-    // Controlados pela Biblioteca (mesmo pacote), como consequencia de emprestar()/devolver().
+    // Controlados pela biblioteca.dominio.Biblioteca (mesmo pacote), como consequencia de emprestar()/devolver().
     void registrarEmprestimo() {
         quantidadeEmprestada++;
     }

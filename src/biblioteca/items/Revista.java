@@ -1,3 +1,7 @@
+package biblioteca.items;
+
+import biblioteca.dominio.ItemBiblioteca;
+
 public class Revista extends ItemBiblioteca {
     private final int edicao;
 

@@ -1,3 +1,5 @@
+package biblioteca.dominio;
+
 import java.util.Locale;
 
 public abstract class ItemBiblioteca {

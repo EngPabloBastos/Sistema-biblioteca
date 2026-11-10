@@ -1,3 +1,9 @@
+import biblioteca.dominio.Biblioteca;
+import biblioteca.items.Livro;
+import biblioteca.items.Revista;
+import biblioteca.usuarios.Aluno;
+import biblioteca.usuarios.Professor;
+
 public class Main {
     public static void main(String[] args) {
         Biblioteca biblioteca = new Biblioteca(10);
@@ -21,7 +27,7 @@ public class Main {
         System.out.println("\n=== EMPRESTIMOS ===");
 
 
-        // Aluno ate o limite de 3 (bem-sucedidos)
+        // biblioteca.usuarios.Aluno ate o limite de 3 (bem-sucedidos)
         biblioteca.emprestar(aluno, l1);
         biblioteca.emprestar(aluno, l2);
         biblioteca.emprestar(aluno, r1);
@@ -29,7 +35,7 @@ public class Main {
         // Quarto item: recusado por limite atingido
         biblioteca.emprestar(aluno, r2);
 
-        // Professor tem limite maior: consegue o mesmo item recusado ao aluno
+        // biblioteca.usuarios.Professor tem limite maior: consegue o mesmo item recusado ao aluno
         biblioteca.emprestar(professor, r2);
 
         System.out.println("\n=== DEVOLUCOES ===");

@@ -1,3 +1,7 @@
+package biblioteca.items;
+
+import biblioteca.dominio.ItemBiblioteca;
+
 public class Livro extends ItemBiblioteca {
     private final String autor;
 
